@@ -1,4 +1,4 @@
-# Modulos Personalizados a Odoo 17
+# Modulos Personalizados Odoo 17
 
 Módulo TMS (Transport Management System)
 Permite gestionar rutas, solicitudes de transporte, viajes, vehículos, conductores, kilometraje y facturación, todo integrado en Odoo.
