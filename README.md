@@ -1,7 +1,7 @@
 # Modulos Personalizados Odoo 14
 
 Módulo FDC: Documento de Captura de Pesca
-# Fishing Capture Document (FCD)
+## Fishing Capture Document (FCD)
 
 Módulo para **Odoo Community / Enterprise** orientado al **sector pesquero**, que permite gestionar el **Documento de Captura de Pesca**, asegurando la trazabilidad del producto desde la captura hasta el inventario.
 
@@ -29,10 +29,10 @@ Este módulo añade nuevos modelos y funcionalidades para la gestión del Docume
 - Cumplimiento de normativas de pesca y seguridad alimentaria
 
   
-# Módulo stock_move_line_partner_tree
+## Módulo stock_move_line_partner_tree
 Extiende Odoo Inventory mostrando el cliente/proveedor en la vista árbol de los movimientos de stock (stock.move.line), facilitando la trazabilidad logística.
 Muestra el partner en la vista lista de movimientos de stock en Odoo.
 
 
-# Módulo stock_secondary_unit_stock_quant
+## Módulo stock_secondary_unit_stock_quant
 Añade soporte de unidad de medida secundaria en los quants de stock, mejorando el control de inventario con múltiples unidades en Odoo.
