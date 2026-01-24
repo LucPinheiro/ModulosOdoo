@@ -21,6 +21,10 @@ Muestra el cliente/proveedor (partner) en la vista lista/árbol de movimientos d
 stock_secondary_unit_stock_quant: 
 Añade soporte para unidad de medida secundaria en quants de stock (stock.quant) para control con múltiples unidades.
 
+# Odoo-15
+
+# Odoo-16
+
 # Odoo-17
 
 Módulos en la raíz de la rama: food_allergens_product, tms.
@@ -30,3 +34,7 @@ Gestión de transporte: rutas, solicitudes, viajes, vehículos, conductores, kil
 
 food_allergens_product: 
 Gestión de alérgenos alimentarios asociados a productos para control e información obligatoria.
+
+# Odoo-18
+
+# Odoo-19
