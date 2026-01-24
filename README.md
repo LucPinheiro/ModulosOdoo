@@ -8,7 +8,7 @@ Los módulos están desarrollados siguiendo buenas prácticas de programación e
 
 Cada módulo incluye su estructura estándar, dependencias y configuración necesaria para su correcta instalación y uso dentro de Odoo.
 
-# Odoo-14
+## Odoo-14
 
 Módulos en la raíz de la rama: fcd, stock_move_line_partner_tree, stock_secondary_unit_stock_quant.
 
@@ -21,11 +21,11 @@ Muestra el cliente/proveedor (partner) en la vista lista/árbol de movimientos d
 stock_secondary_unit_stock_quant: 
 Añade soporte para unidad de medida secundaria en quants de stock (stock.quant) para control con múltiples unidades.
 
-# Odoo-15
+## Odoo-15
 
-# Odoo-16
+## Odoo-16
 
-# Odoo-17
+## Odoo-17
 
 Módulos en la raíz de la rama: food_allergens_product, tms.
 
@@ -35,6 +35,6 @@ Gestión de transporte: rutas, solicitudes, viajes, vehículos, conductores, kil
 food_allergens_product: 
 Gestión de alérgenos alimentarios asociados a productos para control e información obligatoria.
 
-# Odoo-18
+## Odoo-18
 
-# Odoo-19
+## Odoo-19
