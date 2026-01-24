@@ -1,4 +1,4 @@
-# ModulosOdoo
+# Modulos ERP Odoo
 
 Este repositorio contiene una colección de módulos personalizados desarrollados para Odoo, orientados a distintas versiones del ERP y a diferentes aplicaciones funcionales. Los módulos están diseñados para ampliar, adaptar y optimizar las funcionalidades estándar de Odoo según necesidades reales de negocio.
 
