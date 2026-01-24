@@ -15,7 +15,7 @@ Módulos en la raíz de la rama: fcd, stock_move_line_partner_tree, stock_second
 fcd (Fishing Capture Document): 
 Gestión del Documento de Captura de Pesca para trazabilidad en el sector pesquero (lotes, zonas FAO/subzonas, buques, QR, etc.).
 
-stock_move_line_partner_tree
+stock_move_line_partner_tree: 
 Muestra el cliente/proveedor (partner) en la vista lista/árbol de movimientos de stock (stock.move.line) para mejorar trazabilidad logística.
 
 stock_secondary_unit_stock_quant: 
