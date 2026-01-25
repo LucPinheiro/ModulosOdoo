@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <template
+        id="portal_my_home_rma"
+
+        name="Portal My Home : RMA entries"
+        inherit_id="portal.portal_my_home"
+        priority="30"
+    >
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="after">
+            <div class="oe_structure">
+                <section class="s_text_block mt16">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 bg-300">
+                                <p style="margin-top: 1rem;">
+                                    RMA erstellen <strong>
+                                    <a href="/custom_website_rma">hier</a>
+                                    </strong> Um eine RMA zu erstellen, wählen Sie zunächst das Produkt aus,
+                                        geben dann die Rechnungsnummer an und fügen anschließend eine Fehlerbeschreibung hinzu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+</odoo>

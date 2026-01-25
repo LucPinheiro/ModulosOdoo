@@ -1,0 +1,14 @@
+<odoo>
+
+    <data>  
+    
+        <template id="assets_backend_vitosec" name="owl_website_rma" inherit_id="web.assets_frontend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/owl_website_rma/static/src/scss/item_style.scss"/>
+            </xpath>
+
+        </template>
+
+    </data>  
+
+</odoo>
