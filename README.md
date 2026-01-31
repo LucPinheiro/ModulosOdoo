@@ -1,3 +1,16 @@
+# Modulos Personalizados Odoo 17
+
+## Módulo TMS (Transport Management System)
+Permite gestionar rutas, solicitudes de transporte, viajes, vehículos, conductores, kilometraje y facturación, todo integrado en Odoo.
+
+## Módulo Food Allergens
+Permite gestionar y asociar alérgenos alimentarios a los productos, facilitando el control y la información obligatoria sobre alérgenos.
+
+## Módulo Formulario Website RMA
+Módulo para Odoo Website, que permite a los clientes solicitar devoluciones y garantías directamente desde el portal web, integrándose con productos, clientes y configuraciones del sistema.
+
+
+=======
 # Modulos ERP Odoo
 
 Este repositorio contiene una colección de módulos personalizados desarrollados para Odoo, orientados a distintas versiones del ERP y a diferentes aplicaciones funcionales. Los módulos están diseñados para ampliar, adaptar y optimizar las funcionalidades estándar de Odoo según necesidades reales de negocio.
@@ -38,3 +51,4 @@ Gestión de alérgenos alimentarios asociados a productos para control e informa
 ## Odoo-18
 
 ## Odoo-19
+ main
