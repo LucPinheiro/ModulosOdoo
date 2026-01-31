@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="food_allergens_product_form_view" model="ir.ui.view">
+        <field name="name">product.product.form (Food Allergens Product)</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/> 
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='inventory']" position="before">               
+                <page name="allergens" string="Allergens" >
+                    <group>
+                        <group name="allergens" string="Allergens">
+                            <field name="food_allergen_ids" widget="many2many_tags" />
+                        </group>
+                    </group>   
+            
+
+                    <!-- <group>
+                        <group name="allergens" string="Allergens">
+                            <field name="gluten" />
+                            <field name="crustaceans" />
+                            <field name="eggs" />
+                            <field name="fish" />
+                            <field name="peanuts" />
+                            <field name="soy" />
+                            <field name="lactose" />
+                        </group>
+                        <group name="allergens" string="Allergens">
+                            <field name="peel" />
+                            <field name="celery" />
+                            <field name="mustard" />
+                            <field name="sesame" />
+                            <field name="lupins" />
+                            <field name="mollusks" />
+                            <field name="dixido_sulphur_sulfites" />
+                        </group>
+                    </group> -->
+                </page>               
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
+

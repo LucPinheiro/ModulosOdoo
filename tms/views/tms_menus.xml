@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+    <menuitem id="tms_root" name="TMS" sequence="10"/>
+    <menuitem id="tms_menu_catalog" name="Catálogos" parent="tms_root" sequence="10"/>
+    <menuitem id="tms_menu_ops" name="Operación" parent="tms_root" sequence="20"/>
+    <menuitem id="tms_menu_assets" name="Activos" parent="tms_root" sequence="30"/>
+
+    <menuitem id="tms_menu_vehicles" name="Vehículos" parent="tms_menu_assets" action="tms_vehicle_action"/>
+    <menuitem id="tms_menu_routes" name="Rutas" parent="tms_menu_catalog" action="tms_route_action"/>
+    <menuitem id="tms_menu_requests" name="Solicitudes" parent="tms_menu_ops" action="tms_request_action"/>
+    <menuitem id="tms_menu_trips" name="Viajes" parent="tms_menu_ops" action="tms_trip_action"/>
+    <menuitem id="tms_menu_mileage" name="Kilometraje" parent="tms_menu_ops" action="tms_mileage_action"/>
+  </data>
+</odoo>

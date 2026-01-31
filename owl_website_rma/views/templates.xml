@@ -1,0 +1,47 @@
+<odoo>
+
+    <template id="custom_page_website_rma" name="Custom Page">
+        <t t-call="website.layout">
+            <owl-component name="owl_website_rma.OwlProductsRMA" />
+        </t>
+    </template>
+
+    <template id="rma_thanks_page" name="RMA Thanks Page">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                <section class="bg-light py-5">
+                    <div class="container">
+                    <a href="/my/" title="Volver atrás" class="btn btn-light px-2"><i class="oi oi-chevron-left"></i></a>
+                        <h2 class="text-center">Gracias por su solicitud de RMA</h2>
+                        <p class="text-center">Nos pondremos en contacto con usted en breve.</p>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+
+    <template id="rma_error_page" name="RMA Error Modal">
+        <t t-call="website.layout">
+            <!-- Modal de Error -->
+                <div class="modal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         </t>
+    </template>
+
+</odoo>

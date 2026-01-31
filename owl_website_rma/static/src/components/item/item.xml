@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates xml:space="preserve">
+    <t t-name="owl_website_rma.OwlProductsRMA" owl="1">
+        <div class="container mt-5">
+            <div class="d-flex gap-2 my-3">
+                <a href="/my/" title="Volver atrás" class="btn btn-light px-2">
+                    <i class="oi oi-chevron-left"></i>
+                </a>
+                <h3 class="my-0">
+                     <!--<t t-translation="on">Solicitar una RMA</t> -->
+                    <t t-translation="on">RMA erstellen</t>
+                    
+                </h3>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="text-align: justify; max-width: 100%; margin-bottom: 20px;">
+                      Um eine RMA zu erstellen, wählen Sie zunächst das Produkt aus, geben anschließend die Rechnungsnummer an und fügen eine Fehlerbeschreibung hinzu. Nach Bearbeitung der RMA erhalten Sie eine Rückmeldung von uns.
+                    </div>
+
+                </div>
+            </div>
+
+            <div t-if="state.products.length === 0">
+
+               <!-- <p>No hay productos.</p> -->
+                 <t t-translation="on">Es sind keine Produkte vorhanden.</t>
+            </div>
+            
+            <div t-else="">
+                <form t-on-submit.prevent="submitForm">
+                    <!-- Buscador de Productos -->
+                    <div class="s_website_form_rows row s_col_no_bgcolor">
+                        <div class="mb-0 py-2 col-12">
+                            <div class="row s_col_no_resize align-items-center">
+                                <label class="col-form-label col-sm-auto" for="search">
+                                   <!-- <span>Buscar Producto</span> -->
+                                   <t t-translation="on">Produkt auswählen</t>
+                                </label>
+                                <div class="input-group">
+                                    <input type="text" id="search" class="form-control" t-model="state.searchTerm" t-on-input="onSearchChange" placeholder="Produkt auswählen..." />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultados de la Búsqueda  -->
+                    <div t-if="state.searchTerm  &amp;&amp; state.filteredProducts.length > 0" class="search-results">
+                        <t t-foreach="state.filteredProducts" t-as="product" t-key="product.id">
+                            <div class="product-item d-flex align-items-center p-2 border-bottom"
+                                 t-att-data-id="product.id"
+                                 t-on-click="() => onProductSelect(product)">
+                                <img t-att-src="'data:image/png;base64,' + (product.image_1920 || '')"
+                                     alt="Product Image"
+                                     class="img-thumbnail"
+                                     style="width: 50px; height: 50px; margin-right: 10px;" />
+                                <div class="product-info">
+                                    <strong><t t-esc="product.name"/></strong><br/>
+
+                                    <t t-if="product.default_code">
+                                        <p style="color: #F59C1A; font-weight: bold;">
+                                            <t t-esc="product.default_code"/>
+                                        </p>
+                                    </t>
+
+                                <!--  <t t-if="product.category_breadcrumb and product.category_breadcrumb.length">
+                                        <div class="breadcrumb mt-2" style="font-size: 14px;">
+                                            <t t-foreach="product.category_breadcrumb" t-as="cat" t-key="cat.id">
+                                                <t t-set="isNotFirst" t-value="loop and loop.index &gt; 0"/>
+                                                <t t-if="isNotFirst">
+                                                    <span style="margin: 0 5px;">/</span>
+                                                </t>
+                                                <a t-att-href="cat.slug" style="color: #7c7c7c; text-decoration: none;">
+                                                    <t t-esc="cat.name"/>
+                                                </a>
+                                            </t>
+                                        </div>
+                                    </t> -->
+
+
+                                <!--
+                                 <span class="text-muted">
+                                        <t t-esc="product.categ_id &amp;&amp; product.categ_id[1] or 'Sin categoría'" />
+                                    </span> -->
+
+
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+
+                    <!-- Campos Ocultos para el Producto Seleccionado -->
+                    <input type="hidden" name="product_id" t-att-value="state.selectedProductId"/>
+                    <input type="hidden" name="product_name" t-att-value="state.selectedProductName"/>
+                    <input type="hidden" name="product_category" t-att-value="state.selectedProductCategory"/>
+
+                    <!-- Selección de Operación -->
+                    <div class="s_website_form_rows row s_col_no_bgcolor">
+                        <div class="mb-0 py-2 col-12">
+                            <div class="row s_col_no_resize align-items-center">
+                                <label class="col-form-label col-sm-auto" for="operation_id">
+                                     <t t-translation="on">Rechnung auswählen</t>
+                                    <!--<span>Operación</span>-->
+                                </label>
+                                <div class="col-sm">
+                                    <select id="operation_id" name="operation_id" class="form-control" t-model="state.selectedOperationId" t-on-change="onOperationChange">
+                                        <option value="">---</option>
+                                        <t t-foreach="state.operations" t-as="operation" t-key="operation.id">
+                                            <option t-att-value="operation.id">
+                                                <t t-esc="operation.name"/>
+                                            </option>
+                                        </t>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="form-group">
+                      <label for="description"> <t t-translation="on">Beschreibung</t></label>
+                        <!--<label for="description">Descripción</label> -->
+                        <textarea id="description" name="description" class="form-control" rows="4" t-model="state.description" t-on-change="onDescriptionChange"></textarea>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <div class="form-group row mt-4 mb-5">
+                        <div class="">
+                      <!--   <button type="submit" class="btn btn-primary btn-lg">Enviar</button> -->
+                            <button type="submit" class="btn btn-primary btn-lg">Abschicken</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal para errores -->
+            <div t-if="state.showModal" class="modal show" tabindex="-1" style="display:block;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h5 class="modal-title"><t t-translation="on">Fehler bei der Bearbeitung Ihrer Anfrage</t></h5>
+                            <!-- <h5 class="modal-title">Error al procesar su solicitud</h5>-->
+                            <button type="button" class="btn-close" t-on-click="closeModal"></button>
+                        </div>
+                        <div class="modal-body">
+                       <p> <t t-translation="on">Alle Felder sind Pflichtfelder. Bitte füllen Sie das Formular korrekt aus.</t></p>
+                          <!--  <p>Todos los campos son obligatorios. Por favor, complete el formulario correctamente.</p>-->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" t-on-click="closeModal">Abschicken</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </t>
+</templates>
+
+
+
+

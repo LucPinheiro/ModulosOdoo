@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="food_allergens_action" model="ir.actions.act_window">
+        <field name="name">Food Allergens</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">food.allergens</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <!-- <field name="target">new</field> -->
+    </record>
+
+
+    <menuitem 
+        id="food_allergens_menu"
+        name="Food Allergens"
+        action="food_allergens_action"
+        parent="stock.menu_stock_inventory_control"
+        sequence="102"
+    />
+
+     <!-- groups="fcd.group_fcd_manager" -->
+
+</odoo>
