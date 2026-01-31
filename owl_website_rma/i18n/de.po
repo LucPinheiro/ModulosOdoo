@@ -1,0 +1,271 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* owl_website_rma
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-28 10:21+0000\n"
+"PO-Revision-Date: 2025-06-26 14:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid "Buscar Producto"
+msgstr "Produkt suchen"
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid "Buscar productos..."
+msgstr "Produkte suchen..."
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid "Cerrar"
+msgstr "Schließen"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__client
+msgid "Cliente"
+msgstr "Kunde"
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.rma_error_page
+msgid "Close"
+msgstr "Schließen"
+
+#. module: owl_website_rma
+#: model:ir.model,name:owl_website_rma.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurationseinstellungen"
+
+#. module: owl_website_rma
+#: model:ir.model,name:owl_website_rma.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_res_config_settings__rma_default_user_id
+#: model:ir.model.fields,field_description:owl_website_rma.field_website__rma_default_user_id
+msgid "Default Responsible"
+msgstr "Standardverantwortlicher"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_res_config_settings__rma_default_team_id
+#: model:ir.model.fields,field_description:owl_website_rma.field_website__rma_default_team_id
+msgid "Default Team"
+msgstr "Standardteam"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,help:owl_website_rma.field_res_config_settings__rma_default_user_id
+#: model:ir.model.fields,help:owl_website_rma.field_website__rma_default_user_id
+msgid ""
+"Default responsible for new leads created through the 'Request RMA' form."
+msgstr ""
+"Standardmäßig verantwortlich für neue Leads, die über das Formular „RMA "
+"anfordern“ erstellt wurden."
+
+#. module: owl_website_rma
+#: model:ir.model.fields,help:owl_website_rma.field_res_config_settings__rma_default_team_id
+#: model:ir.model.fields,help:owl_website_rma.field_website__rma_default_team_id
+msgid "Default team for new RMAs created through the 'Request RMA' form."
+msgstr ""
+"Standardteam für neue RMAs, die über das Formular „RMA anfordern“ erstellt "
+"wurden."
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__description
+#, python-format
+msgid "Descripción"
+msgstr "Beschreibung"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__shipping_address
+msgid "Dirección de Envío"
+msgstr "Postanschrift"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__billing_address
+msgid "Dirección de Facturación"
+msgstr "Rechnungsadresse"
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid "Enviar"
+msgstr "Schicken"
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid "Error al procesar su solicitud"
+msgstr "Fehler bei der Bearbeitung Ihrer Anfrage"
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.rma_thanks_page
+msgid "Gracias por su solicitud de RMA"
+msgstr "Vielen Dank für Ihre RMA-Anfrage"
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.rma_error_page
+msgid "Modal body text goes here."
+msgstr "Hier kommt der modale Textkörper zum Einsatz."
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.rma_error_page
+msgid "Modal title"
+msgstr "Modaler Titel"
+
+#. module: owl_website_rma
+#: model:ir.model,name:owl_website_rma.model_ir_model
+msgid "Models"
+msgstr "Modelle"
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid "No hay productos."
+msgstr "Es sind keine Produkte vorhanden."
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.rma_thanks_page
+msgid "Nos pondremos en contacto con usted en breve."
+msgstr "Wir werden uns in Kürze mit Ihnen in Verbindung setzen."
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid ""
+"Nuestro equipo lo procesará y se pondrá en contacto con usted una vez que "
+"esté validado."
+msgstr ""
+"Unser Team wird es bearbeiten und Sie kontaktieren, sobald es validiert "
+"ist."
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__operation_id
+#, python-format
+msgid "Operación"
+msgstr "Betrieb"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__origin
+msgid "Origen de la solicitud"
+msgstr "Herkunft der Anfrage"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__product_category
+msgid "Product Category"
+msgstr "Produktkategorie"
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid "Product Image"
+msgstr "Produktbild"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__product_name
+msgid "Product Name"
+msgstr "Produktname"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__product_id
+msgid "Producto"
+msgstr "Produkt"
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.portal_my_home_rma
+msgid "Puedes solicitar una RMA"
+msgstr "RMA erstellen"
+
+#. module: owl_website_rma
+#: model:ir.model,name:owl_website_rma.model_rma
+msgid "RMA"
+msgstr "RMA"
+
+#. module: owl_website_rma
+#: model:ir.model.fields,help:owl_website_rma.field_rma__origin
+msgid "Reference of the document that generated this RMA."
+msgstr "Referenz des Dokuments, das diese RMA generiert hat."
+
+#. module: owl_website_rma
+#: model:ir.model.fields,field_description:owl_website_rma.field_rma__order_id
+msgid "Sale Order"
+msgstr "Verkaufsauftrag"
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.rma_error_page
+msgid "Save changes"
+msgstr "Änderungen speichern"
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid "Solicitar una RMA"
+msgstr "Fordern Sie eine RMA an"
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#, python-format
+msgid ""
+"Todos los campos son obligatorios. Por favor, complete el formulario "
+"correctamente."
+msgstr ""
+"Alle Felder sind Pflichtfelder. Bitte füllen Sie das Formular korrekt aus."
+
+#. module: owl_website_rma
+#. odoo-javascript
+#: code:addons/owl_website_rma/static/src/components/item/item.xml:0
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.rma_thanks_page
+#, python-format
+msgid "Volver atrás"
+msgstr "Geh zurück"
+
+#. module: owl_website_rma
+#: model:ir.model,name:owl_website_rma.model_website
+msgid "Website"
+msgstr "Webseite"
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.portal_my_home_rma
+msgid "aquí"
+msgstr "Hier"
+
+#. module: owl_website_rma
+#: model_terms:ir.ui.view,arch_db:owl_website_rma.portal_my_home_rma
+msgid ""
+"si no\n"
+"                                    conoce el pedido de venta a partir del "
+"cual se realizó. Si conoce\n"
+"                                    el pedido de venta, acceda a él y haga "
+"clic en el botón correspondiente."
+msgstr ""
+"Um eine RMA zu erstellen, wählen Sie zunächst das Produkt aus,  \n"
+"geben dann die Rechnungsnummer an und fügen anschließend eine "
+"Fehlerbeschreibung hinzu."

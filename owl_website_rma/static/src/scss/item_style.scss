@@ -1,0 +1,37 @@
+.product-list {
+  background-color: darkorange;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.product-item {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover: cambia el fondo y escala ligeramente el tamaño */
+.product-item:hover {
+  background-color: lightgray;
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño */
+}
+
+/* Añadir sombra al hover */
+.product-item:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejorar el estilo de la imagen */
+.product-item img {
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Información del producto */
+.product-info {
+  font-size: 14px;
+  line-height: 1.5;
+}
